@@ -1,0 +1,40 @@
+.container-carousel{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    .title-container{
+        position: absolute;
+        z-index: 99;
+        top: 350px;
+        left: 0px;
+        right: 0px;
+        h1{
+            color: white;
+            text-align: center;
+            font-size: 5vw;
+            font-size:60px;
+            font-family: 'MoolBoran';
+            text-transform: uppercase;
+            margin-bottom: 0;
+            span{
+                color: #A18D3D;
+            }
+        }
+        h3{
+            color: white;
+            font-family: 'Avenir';
+            font-size: 25px;
+            span{
+                color: #A18D3D;
+            }
+        }
+    }
+    .carousel{
+        width: 100%;
+        .item-carousel{
+            .image-carousel{
+                height: 70vh;
+            }
+        }
+    }
+}

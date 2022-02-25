@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500;600;700&display=swap');
+
+.navBar-container{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    box-shadow: 3px 3px 3px rgb(216, 213, 213);
+    .navBar-top{
+        width: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        div{
+            width: 90%;
+            max-width: 1300px;
+            display: flex;
+            justify-content: end;
+            ul{
+                display: flex;
+                align-items: center;
+                margin-bottom: 0;
+                list-style: none;
+                padding-left: 0;
+                gap: 10px;
+                li{
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .navBar-wrapper{
+        width: 90%;
+        max-width: 1300px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .icon-logo{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            font-family: 'Cabin', sans-serif;
+            .icon{
+                width: 235px;
+                height: 40px;
+            }
+        }
+        .icon-hamburger-mobile{
+            display: none;
+        }
+        .icon-close-mobile{
+            display: none;
+        }
+        .menu{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin: 0;
+            .menu-item{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .menu-item-link{
+                    text-decoration: none;
+                    color: black;
+                    font-family: 'Avenir';
+                    text-transform: uppercase;
+                    &:hover{
+                        color: #A18D3D;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 968px) {
+    
+    .navBar-container{
+        .navBar-wrapper{
+            .menu{
+                width: 100%;
+                height: 90vh;
+                position: absolute;
+                top: 75px;
+                left: -1000px;
+                transition: 0.5s all ease-in;
+                background-color: white;
+                flex-direction: column;
+                padding: 0;
+                margin: 0;
+                z-index: 99;
+                .menu-item{
+                    width: 100%;
+                    height: 70px;
+                }
+               }
+               .icon-hamburger-mobile{
+                   display: flex;
+                   font-size: 2rem;
+                   color: black;
+                   padding-right: 1rem;
+               }
+        }
+    
+    }
+}

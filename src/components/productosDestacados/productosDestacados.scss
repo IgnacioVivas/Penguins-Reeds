@@ -1,0 +1,23 @@
+.productos-destacados-container{
+    margin-top: 100px;
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 100px;
+    .productos-destacados-row{
+        width: 90%;
+        row-gap: 20px;
+        h3{
+            font-size: 80px;
+            font-family: 'MoolBoran';
+        }
+        .col-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}

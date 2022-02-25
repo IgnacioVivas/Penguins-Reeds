@@ -1,0 +1,30 @@
+.instrumentos-container{
+    margin-top: 100px;
+    .instrumentos-row{
+        // display: flex;
+        // flex-wrap: wrap;
+        .instrumento-col{
+            &:hover{
+                cursor: pointer;
+            }
+            .instrumento{
+                background-color: #EFEEF4;
+                border-radius: 5%;
+                padding: 0px 20px 20px;
+                img{
+                    width: 290px;
+                    // height: 400px;
+                }
+                h3{
+                    font-family: 'Avenir';
+                    color: #9c8723;
+                    font-size: 25px;
+                    font-weight: 600;
+                    text-align: left;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+    
+}
